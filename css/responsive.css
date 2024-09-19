@@ -1,0 +1,84 @@
+@media screen and (max-width:991px) {
+    nav div a img{
+        height: 50px;
+    }
+    .carousel-caption{
+        bottom: 300px;
+    }
+    .carousel-caption p{
+        width: 100%;
+    }
+    footer{
+       padding: 1.5rem;
+    }
+    .contact-us .container .row{
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .contact-us .container .row .contact-text {
+        margin-top: 5%;
+        text-align: center;
+    }
+    .about-me .container .row{
+        justify-content: center;
+        align-items: center;
+    }
+    .galery .container-fluid .row .column{
+        flex: 50%;
+    }
+}
+
+
+@media screen and (max-width:767px){
+    .navbar-nav{
+        text-align: center;
+    }
+    .carousel-caption{
+        bottom: 125px;
+    }
+    .carousel-caption h5{
+        font-size: 17px;
+    }
+    .carousel-caption a{
+        padding: 10px 15px;
+    }
+    .carousel-caption p{
+        width: 100%;
+        line-height: 1.6;
+    }
+    footer .container{
+        flex-direction: column;
+        align-items: center;
+        padding: 2%;
+        font-size: 10%;
+    }
+    footer .container div{
+        padding: 7px 3px;
+    }
+    footer .container .order1{
+        order: 1;
+    }
+    footer .container .order2{
+        order: 2;
+    }
+    footer .container .order3{
+        order: 3;
+    }
+    .about-me .container .row .img-author{
+        display: flex;
+        justify-content: center !important;
+        align-items: center;
+       
+    }
+    .about-me .container .row .align{
+        display: flex;
+       justify-content: center;
+       margin-top: 2%;
+    }
+    .galery .container-fluid .row .column{
+        flex: 100%;
+    }
+    .galery .container-fluid .row .column img{
+        filter: grayscale(0) brightness(1);
+    }
+}
