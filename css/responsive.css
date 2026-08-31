@@ -790,68 +790,142 @@
 
 @media (max-width: 480px) {
  .hero-section {
-    background-position: 90% center !important;
-  }
+        min-height: 100vh;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-position: 90% center !important;
+        box-sizing: border-box;
+    }
 
-  .hero-content {
-    max-width: 70% !important;
-    padding-left: 10px !important;
-  }
+    /* Sve ostale sekcije na punoj visini ekrana */
+    section:not(.hero-section) {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px 16px;
+        box-sizing: border-box;
+    }
 
-  .hero-title {
-    font-size: 19px !important;
-  }
+    /* Održavanje strukture kontejnera */
+    section:not(.hero-section) > .container,
+    section:not(.hero-section) > .container-fluid {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1;
+    }
 
-  .location-btn,
-  .cta-btn {
-    font-size: 9.5px !important;
-    padding: 7px 8px !important;
-  }
-  .hero-subtitle {
-    font-size: 9px;
-  }
+    /* Posebno prilagođavanje za Team sekciju u sklopu istog principa */
+    .team-section {
+        min-height: 100vh;
+        height: 100vh;
+        padding: 30px 16px 24px 16px;
+        position: relative;
+        background-position: 65% top;
+        background-size: cover;
+    }
 
-  .stat-text {
-    font-size: 7.5px;
-  }
+    .team-section > .container-fluid,
+    .team-section .row,
+    .team-section [class*="col-"] {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
 
-  .stat-text strong {
-    font-size: 8.5px;
-  }
-  .values-title {
-    font-size: 20px;
-  }
+    .team-section .team-content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Naslov gore, kartice dole */
+        padding-left: 0;
+    }
 
-  .values-list li {
-    font-size: 13px;
-  }
 
-  .values-subtitle {
-    font-size: 17px;
-  }
+    /* --- 2. TVOJI TIPOGRAFSKI I ELEMENTALNI STILOVI --- */
 
-  .values-desc,
-  .values-footer-text {
-    font-size: 11.5px;
-  }
-  .top-title {
-    font-size: 18px;
-  }
+    /* Hero komponente */
+    .hero-content {
+        max-width: 70% !important;
+        padding-left: 10px !important;
+    }
 
-  .trophies-title {
-    font-size: 21px;
-  }
+    .hero-title {
+        font-size: 19px !important;
+    }
 
-  .trophies-desc {
-    font-size: 11px;
-  }
-  .team-title {
-    font-size: 20px;
-  }
+    .hero-subtitle {
+        font-size: 9px;
+    }
 
-  .card-text {
-    font-size: 11px;
-  }
+    .location-btn,
+    .cta-btn {
+        font-size: 9.5px !important;
+        padding: 7px 8px !important;
+    }
+
+    .stat-text {
+        font-size: 7.5px;
+    }
+
+    .stat-text strong {
+        font-size: 8.5px;
+    }
+
+    /* Values komponente */
+    .values-title {
+        font-size: 20px;
+    }
+
+    .values-subtitle {
+        font-size: 17px;
+    }
+
+    .values-list li {
+        font-size: 13px;
+    }
+
+    .values-desc,
+    .values-footer-text {
+        font-size: 11.5px;
+    }
+
+    /* Trophies & Top komponente */
+    .top-title {
+        font-size: 18px;
+    }
+
+    .trophies-title {
+        font-size: 21px;
+    }
+
+    .trophies-desc {
+        font-size: 11px;
+    }
+
+    /* Team komponente */
+    .team-title {
+        font-size: 20px;
+        line-height: 1.1;
+        max-width: 160px;
+        margin-bottom: 0;
+    }
+
+    .team-cards {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .card-text {
+        font-size: 11px;
+    }
 }
 
 
