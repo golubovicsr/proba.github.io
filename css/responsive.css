@@ -1,0 +1,877 @@
+* {
+  box-sizing: border-box;
+}
+
+@media (max-width: 1100px) {
+  #hero #slogan p .prvi {
+    font-size: 30px;      
+  }
+  #hero #slogan p .drugi {
+    font-size: 45px;      
+  }
+  .o-nama-hero {
+    width: 60%;
+  }
+}
+
+@media (max-width: 992px) {
+ .hero-section {
+    background-position: 75% center !important;
+  }
+
+  .hero-content {
+    padding-left: 25px;
+    max-width: 60%;
+  }
+
+  .hero-title {
+    font-size: 32px !important;
+    line-height: 1.05;
+    margin-bottom: 15px;
+  }
+
+  .location-btn,
+  .cta-btn {
+    max-width: 280px;
+    font-size: 12px !important;
+    padding: 9px 12px !important;
+  }
+
+  .hero-subtitle {
+    font-size: 11px !important;
+  }
+  /* Stats bar & brush edge */
+  .stats-bar {
+    padding: 0 30px;
+    height: 85px;
+  }
+
+  .brush-edge { 
+    bottom: 85px; 
+  }
+
+  .stat-bs-icon { 
+    font-size: 28px !important; 
+  }
+
+  .stat-text { 
+    font-size: 10px; 
+  }
+
+  .stat-text strong { 
+    font-size: 12px; 
+  }
+
+  .stats-group {
+    gap: 8px;
+  }
+  .values-section {
+    background-position: 75% center;
+    padding: 60px 0;
+  }
+
+  .values-content {
+    padding-left: 20px;
+  }
+
+  .values-title {
+    font-size: clamp(28px, 3.5vw, 38px);
+    line-height: 1.05;
+    margin-bottom: 25px;
+  }
+
+  .values-list {
+    gap: 12px;
+    margin-bottom: 25px;
+  }
+
+  .values-list li {
+    font-size: 16px;
+    gap: 12px;
+  }
+
+  .values-list li i {
+    font-size: 20px;
+  }
+
+  .values-desc {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .values-subtitle {
+    font-size: 24px;
+    line-height: 1.1;
+  }
+
+  .values-footer-text {
+    font-size: 14px;
+  }
+  .trophies-section {
+    background-position: 70% bottom;
+    padding: 40px 25px;
+  }
+
+  .top-title-wrapper,
+  .bottom-content-wrapper {
+    max-width: 450px;
+  }
+
+  .top-title {
+    font-size: clamp(26px, 3.2vw, 36px);
+  }
+
+  .trophies-title {
+    font-size: clamp(28px, 3.5vw, 40px);
+    line-height: 1.05;
+  }
+
+  .trophies-desc {
+    font-size: 14px;
+  }
+  .team-section {
+    background-position: 80% center;
+    padding: 60px 0;
+  }
+
+  .team-content {
+    padding-left: 20px;
+  }
+
+  .team-title {
+    font-size: clamp(28px, 3.5vw, 38px);
+    line-height: 1.05;
+    margin-bottom: 25px;
+  }
+
+  .team-cards {
+    gap: 12px;
+  }
+
+  .glass-card {
+    padding: 10px 15px;
+    gap: 15px;
+  }
+
+  .card-icon-box {
+    width: 42px;
+    height: 42px;
+    font-size: 20px;
+  }
+
+  .card-text {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  .blog {
+    padding: 2rem 1.5rem;
+    max-width: 96%;
+    margin: 2rem auto;
+  }
+}
+
+@media (max-width: 780px) {
+ .hero-section {
+    background-position: 80% center !important;
+  }
+
+  .hero-content {
+    padding-left: 20px;
+    max-width: 65%;
+  }
+
+  .hero-title {
+    font-size: 28px !important;
+  }
+
+  .location-btn,
+  .cta-btn {
+    max-width: 250px;
+    font-size: 11px !important;
+  }
+
+  .hero-subtitle { 
+    font-size: 11px; 
+  }
+
+  /* Stats bar & brush edge */
+  .stats-bar {
+    padding: 0 25px;
+    height: 75px;
+  }
+
+  .brush-edge { 
+    bottom: 75px; 
+  }
+
+  .stat-bs-icon { 
+    font-size: 24px !important; 
+  }
+
+  .stat-text { 
+    font-size: 9px; 
+  }
+
+  .stat-text strong { 
+    font-size: 11px; 
+  }
+
+  .stats-group {
+    gap: 5px;
+    padding: 0 10px;
+  }
+  .values-section {
+    background-position: 80% center;
+    padding: 50px 0;
+  }
+
+  .values-content {
+    padding-left: 15px;
+  }
+
+  .values-title {
+    font-size: 26px;
+  }
+
+  .values-list li {
+    font-size: 15px;
+  }
+
+  .values-list li i {
+    font-size: 18px;
+  }
+
+  .values-desc {
+    font-size: 13px;
+    margin-bottom: 18px;
+  }
+
+  .values-subtitle {
+    font-size: 22px;
+  }
+
+  .values-footer-text {
+    font-size: 13px;
+  }
+  .trophies-section {
+    background-position: 75% bottom;
+    padding: 35px 20px;
+  }
+
+  .top-title-wrapper,
+  .bottom-content-wrapper {
+    max-width: 380px;
+  }
+
+  .top-title {
+    font-size: 24px;
+  }
+
+  .trophies-title {
+    font-size: 28px;
+  }
+
+  .trophies-desc {
+    font-size: 13px;
+  }
+  .team-section {
+    background-position: 85% center;
+    padding: 50px 0;
+  }
+
+  .team-content {
+    padding-left: 15px;
+  }
+
+  .team-title {
+    font-size: 26px;
+  }
+
+  .glass-card {
+    padding: 8px 12px;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(5px);
+  }
+
+  .card-icon-box {
+    width: 38px;
+    height: 38px;
+    font-size: 18px;
+  }
+
+  .card-text {
+    font-size: 13px;
+  }
+   
+  .blog {
+    padding: 1.5rem 1rem;
+    margin: 1.5rem auto;
+    border-radius: 8px;
+  }
+  
+  .blog h1 {
+    font-size: 1.8rem !important;
+  }
+  
+  .blog p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  .blog-highlight {
+    font-size: 0.9rem;
+    margin-top: 1.5rem;
+  }
+  .row.align-items-center.mb-5.border.rounded {
+    margin-bottom: 1.5rem !important;
+    padding: 1rem;
+  }
+  
+  .vesti-text-wrapper h2 {
+    font-size: 1.2rem;
+  }
+  
+  .vesti-text-wrapper .btn {
+    font-size: 0.85rem;
+    padding: 0.4rem 1rem;
+  }
+  #backToTop {
+    bottom: 70px;
+  }
+  .blog h1 {
+    font-size: 1.5rem;
+  }
+  .blog-subtitle {
+    font-size: 1rem;
+  }
+  .blog-highlight {
+    font-size: 1rem;
+  }
+  .karate-text p,
+  .karate-text .karate-conclusion {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  .karate-text ul.karate-benefits li {
+    font-size: 0.95rem;
+  }
+  .px-custom {
+    padding-left: 1.5rem; 
+    padding-right: 1.5rem;
+  }
+  .o-nama-hero {
+    width: 65%;
+  }
+}
+
+@media (max-width: 576px) {
+.hero-section {
+    height: auto;
+    min-height: 520px;
+    background-position: 85% center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 20px;
+  }
+
+  .hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+    background: linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 75%);
+    z-index: 1;
+  }
+
+  .hero-content {
+    padding: 0 0 0 15px;
+    max-width: 220px;
+    margin-top: auto;
+    margin-bottom: 40px;
+    z-index: 2;
+  }
+
+  .hero-title {
+    font-size: 22px;
+    line-height: 1.05;
+    margin-bottom: 12px;
+  }
+
+  .location-btn,
+  .cta-btn {
+    max-width: 100%;
+    font-size: 10px;
+    padding: 9px 8px;
+    margin-bottom: 8px;
+    gap: 6px;
+  }
+
+  .btn-icon-bs {
+    font-size: 14px;
+  }
+
+  .hero-subtitle {
+    font-size: 9px;
+  }
+
+  .brush-edge {
+    bottom: 85px;
+    height: 18px;
+  }
+
+  .stats-bar {
+    height: 85px;
+    padding: 0 10px;
+    position: relative;
+    z-index: 4;
+    margin-top: 0;
+  }
+
+  .stat-bs-icon {
+    font-size: 24px;
+  }
+
+  .stat-text {
+    font-size: 9px;
+  }
+
+  .stat-text strong {
+    font-size: 11px;
+  }
+ .values-section {
+    min-height: auto;
+    padding: 50px 0;
+    background-position: 85% center; /* Pomera decu udesno */
+  }
+
+  /* Gradijent koji čuva kontrast teksta, a ne skriva decu */
+  .values-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0,0,0,0.85) 50%, rgba(0,0,0,0.15) 90%);
+    z-index: 1;
+  }
+
+  /* Resetujemo kolonu i uklanjamo padding-left od 50px */
+  .values-section .col-10 {
+    flex: 0 0 80%;
+    max-width: 80%;
+    padding-left: 15px;
+  }
+
+  .values-content {
+    padding-left: 0; /* Uklanja fiksni desktop padding */
+    position: relative;
+    z-index: 2;
+  }
+
+  /* Tipografija prilagođena ekranu */
+  .values-title {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+
+  .values-list {
+    margin-bottom: 14px;
+  }
+
+  .values-list li {
+    font-size: 13px;
+    margin-bottom: 5px;
+    gap: 8px;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.9);
+  }
+
+  .values-list li i {
+    font-size: 15px;
+  }
+
+  .values-desc,
+  .values-footer-text {
+    font-size: 11px;
+    line-height: 1.3;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.9);
+  }
+
+  .values-desc {
+    margin-bottom: 18px;
+  }
+
+  .values-subtitle {
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+
+  .highlight-red {
+    color: #ff3333; /* Svetlija crvena radi bolje vidljivosti */
+    text-shadow: 0 2px 6px rgba(0,0,0,0.9);
+  }
+  .trophies-section {
+    min-height: 480px;
+    height: auto;
+    padding: 30px 20px;
+    background-position: 80% center; /* Drži medalje i pehare sa desne strane */
+  }
+
+  /* Prilagođeni tamni gradijent za mobilni ekran */
+  .trophies-section::before {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9) 35%, rgba(0, 0, 0, 0.2) 85%);
+  }
+
+  .top-title-wrapper,
+  .bottom-content-wrapper {
+    max-width: 65%; /* Daje tekstu dovoljno prostora da ne ide preko pehara */
+  }
+
+  .top-title {
+    font-size: 20px;
+    line-height: 1.1;
+  }
+
+  .trophies-title {
+    font-size: 22px;
+    line-height: 1.1;
+    margin-bottom: 8px;
+  }
+
+  .trophies-desc {
+    font-size: 11px;
+    line-height: 1.35;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9);
+  }
+
+  .highlight-red {
+    color: #ff2a2a; /* Svetlija crvena za bolju čitljivost na tamnoj pozadini */
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
+  }
+.reviews-section {
+    padding: 40px 0; /* Smanjen vertikalni razmak sekcije */
+  }
+
+  /* Smanjujemo Bootstrapov mb-5 iznad kartica na mobilnom */
+  .reviews-section .mb-5 {
+    margin-bottom: 1.5rem !important;
+  }
+
+  .reviews-main-title {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+
+  .google-badge {
+    font-size: 11px;
+    padding: 4px 12px;
+  }
+
+  .google-badge i {
+    font-size: 12px;
+  }
+
+  .google-review-card {
+    padding: 16px; /* Kompaktniji unutrašnji razmak */
+    border-radius: 12px;
+  }
+
+  .profile-avatar {
+    width: 36px;
+    height: 36px;
+    font-size: 15px;
+  }
+
+  .profile-name {
+    font-size: 14px;
+  }
+
+  .review-date {
+    font-size: 11px;
+  }
+
+  .google-icon {
+    font-size: 16px;
+  }
+
+  .review-stars {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+
+  .review-text {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+.team-section {
+        min-height: auto;
+        padding: 30px 16px 40px 16px;
+        background-position: 65% top;
+        background-size: cover;
+        position: relative;
+    }
+
+    /* Suptilan gradijent: svetao gore, tamniji dole iza kartica */
+    .team-section::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(0, 0, 0, 0.2) 40%,
+            rgba(0, 0, 0, 0.85) 75%,
+            #000000 100%
+        );
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    .team-section .container-fluid,
+    .team-section .row,
+    .team-section [class*="col-"] {
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+
+    .team-section .team-content {
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        row-gap: 240px; /* Pravi tačan prostor za likove trenera između naslova i kartica */
+        position: relative;
+        z-index: 2;
+    }
+
+    /* Naslov u levom uglu */
+    .team-section .team-title {
+        font-size: 22px;
+        line-height: 1.1;
+        margin-bottom: 0;
+        max-width: 160px; /* Ne prelazi preko glave trenera */
+    }
+
+    .team-section .title-dark {
+        color: #000000;
+    }
+
+    .team-section .highlight-red {
+        color: #d60000;
+    }
+
+    /* Kartice dole */
+    .team-section .team-cards {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .team-section .glass-card {
+        background: rgba(20, 20, 20, 0.55);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 14px;
+        padding: 10px 14px;
+        gap: 12px;
+    }
+
+    .team-section .card-icon-box {
+        width: 44px;
+        height: 44px;
+        border: 2px solid #e60000;
+        border-radius: 10px;
+        background: rgba(230, 0, 0, 0.15);
+    }
+
+    .team-section .card-icon-box i {
+        color: #ff2a2a;
+        font-size: 20px;
+    }
+
+    .team-section .card-text {
+        font-size: 13px;
+        line-height: 1.25;
+    }
+
+  .probniTrening {
+    align-items: flex-start;
+    text-align: left;
+    margin-left: 25px;
+  }
+  .drzacDugmeta {
+    justify-content: flex-start;
+  }
+  .probniTrening h2, 
+  .drzacDugmeta .postaniClan {
+    font-size: 16px; 
+  }
+  
+  .faq {
+    max-width: 90%;
+    font-size: 0.9rem;
+  }
+  .blog {
+    padding: 1rem 0.75rem;
+  }
+  .blog h1 {
+    font-size: 1.6rem;
+  }
+  .blog-subtitle {
+    font-size: 0.95rem;
+  }
+  .blog-highlight {
+    font-size: 0.95rem;
+  }
+  
+  .karate-text p,
+  .karate-text .karate-conclusion {
+    font-size: 0.95rem;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+  .karate-text ul.karate-benefits {
+    padding-left: 12px;
+    margin-bottom: 8px;
+  }
+  .karate-text ul.karate-benefits li {
+    font-size: 0.85rem;
+    margin-bottom: 2px;
+  }
+  .karate-text blockquote {
+    padding-left: 6px;
+    margin: 8px 0;
+  }
+  
+  .o-nama-hero {
+    width: 70%;
+  }
+  .blog {
+    padding: 1rem 0.75rem;
+    margin: 1rem auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+  
+  
+  
+  .blog-highlight {
+    padding-left: 0.75rem;
+    font-size: 0.85rem;
+    border-left-width: 3px;
+  }
+  
+  .row.align-items-center.mb-5.border.rounded {
+    padding: 0.75rem;
+    margin-bottom: 1rem !important;
+  }
+  
+  .vesti-text-wrapper h2 {
+    font-size: 1rem;
+  }
+  
+  .vesti-text-wrapper p {
+    font-size: 0.8rem;
+  }
+  
+  .vesti-text-wrapper .btn {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.8rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+ .hero-section {
+    background-position: 90% center !important;
+  }
+
+  .hero-content {
+    max-width: 70% !important;
+    padding-left: 10px !important;
+  }
+
+  .hero-title {
+    font-size: 19px !important;
+  }
+
+  .location-btn,
+  .cta-btn {
+    font-size: 9.5px !important;
+    padding: 7px 8px !important;
+  }
+  .hero-subtitle {
+    font-size: 9px;
+  }
+
+  .stat-text {
+    font-size: 7.5px;
+  }
+
+  .stat-text strong {
+    font-size: 8.5px;
+  }
+  .values-title {
+    font-size: 20px;
+  }
+
+  .values-list li {
+    font-size: 13px;
+  }
+
+  .values-subtitle {
+    font-size: 17px;
+  }
+
+  .values-desc,
+  .values-footer-text {
+    font-size: 11.5px;
+  }
+  .top-title {
+    font-size: 18px;
+  }
+
+  .trophies-title {
+    font-size: 21px;
+  }
+
+  .trophies-desc {
+    font-size: 11px;
+  }
+  .team-title {
+    font-size: 20px;
+  }
+
+  .card-text {
+    font-size: 11px;
+  }
+}
+
+
+
+@media (max-width: 400px) {
+  .blog {
+    padding: 0.5rem;
+  }
+  
+  .blog h1 {
+    font-size: 1.1rem !important;
+  }
+  
+  .vesti-text-wrapper h2 {
+    font-size: 0.85rem;
+  }
+  
+  .vesti-text-wrapper .btn {
+    font-size: 0.7rem;
+    padding: 0.25rem 0.6rem;
+  }
+}
+
