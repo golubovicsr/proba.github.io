@@ -790,152 +790,80 @@
 
 @media (max-width: 480px) {
 .hero-section {
-        min-height: calc(100vh - 70px);
+        min-height: auto;
         height: auto;
         padding-top: 20px;
-        padding-bottom: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        padding-bottom: 40px;
+        display: block;
+    }
+
+    /* 2. SEKCIJA SA DECOM ("Razvijamo više od sporta"): Dete pomereno u desno, tekst u levu stranu */
+    .values-section, 
+    .about-values-section, 
+    section:has(.values-title) {
         background-position: 85% center;
+        padding: 40px 16px;
     }
-
-    section:not(.hero-section):not(.team-section) {
-        min-height: 100vh;
-        height: auto;
-        padding: 60px 16px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        box-sizing: border-box;
-    }
-
-    /* --- 2. TEAM SEKCIJA (Tačno namešteno da nema belina i da ne preklapa lice) --- */
-
-    .team-section {
-        min-height: 100vh;
-        height: 100vh;
-        padding: 40px 16px 20px 16px;
-        background-position: 78% top; /* Pomeren trener udesno da oslobodi levi ugao */
-        background-size: cover;
-        background-color: #000000;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        box-sizing: border-box;
-    }
-
-    .team-section .container-fluid,
-    .team-section .row,
-    .team-section [class*="col-"] {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        flex: 1;
-        margin: 0;
-        padding: 0;
-    }
-
-    .team-section .team-content {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+    
+    .values-content, 
+    .about-content {
+        max-width: 70%;
         padding-left: 0;
     }
 
-    /* Naslov lepo stoji u levom uglu i ne prelazi na glavu */
-    .team-section .team-title {
-        font-size: 19px;
-        line-height: 1.15;
-        max-width: 145px;
-        margin-top: 10px;
-        margin-bottom: 0;
-    }
-
-    /* Kartice na dnu */
-    .team-section .team-cards {
-        width: 100%;
-        max-width: 100%;
+    /* 3. TROFEJI / REZULTATI: Sređen raspored teksta da lepo legne */
+    .trophies-section,
+    .results-section {
+        padding: 40px 16px;
+        text-align: left;
         display: flex;
         flex-direction: column;
-        gap: 8px;
-        margin-bottom: 5px;
+        justify-content: center;
     }
 
-    .team-section .glass-card {
-        background: rgba(20, 20, 20, 0.75); /* Malo zatamnjenije da se tekst savršeno vidi */
-        backdrop-filter: blur(8px);
-        -webkit-backdrop-filter: blur(8px);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        border-radius: 12px;
-        padding: 10px 14px;
-    }
-
-    .team-section .card-text {
-        font-size: 11px;
-        line-height: 1.2;
-    }
-
-
-    /* --- 3. TYPOGRAPHY & ELEMENTS --- */
-
-    .hero-content {
-        max-width: 75%;
-        padding-left: 10px;
-    }
-
-    .hero-title {
-        font-size: 19px;
-    }
-
-    .hero-subtitle {
-        font-size: 9px;
-    }
-
-    .location-btn,
-    .cta-btn {
-        font-size: 9.5px;
-        padding: 7px 8px;
-    }
-
-    .stat-text {
-        font-size: 7.5px;
-    }
-
-    .stat-text strong {
-        font-size: 8.5px;
-    }
-
-    /* Values */
-    .values-title {
-        font-size: 20px;
-    }
-
-    .values-subtitle {
-        font-size: 17px;
-    }
-
-    .values-list li {
-        font-size: 13px;
-    }
-
-    .values-desc,
-    .values-footer-text {
-        font-size: 11.5px;
-    }
-
-    /* Trophies & Top */
+    .trophies-title, 
     .top-title {
-        font-size: 18px;
-    }
-
-    .trophies-title {
-        font-size: 21px;
+        font-size: 19px;
+        line-height: 1.2;
+        margin-bottom: 10px;
     }
 
     .trophies-desc {
-        font-size: 11px;
+        font-size: 11.5px;
+        line-height: 1.4;
+    }
+
+    /* 4. RECENZIJE ("Rekli su o nama"): Ostaju netaknute i centrirane kako je dobro */
+    .testimonials-section,
+    .reviews-section {
+        padding: 40px 16px;
+    }
+
+    /* 5. TIM SEKCIJA: Naslov odvojen da ne prelazi preko glave trenera */
+    .team-section {
+        min-height: 100vh;
+        height: auto;
+        padding: 60px 16px 30px 16px;
+        background-position: 75% top;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+
+    .team-section .team-title {
+        font-size: 19px;
+        line-height: 1.15;
+        max-width: 150px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    .team-section .team-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
     }
 }
 
